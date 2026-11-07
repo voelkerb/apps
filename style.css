@@ -89,3 +89,8 @@ a.card:hover { transform: translateY(-2px); text-decoration: none; }
 
 footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; display: flex; gap: 18px; flex-wrap: wrap; }
 .back { display: inline-block; margin-bottom: 20px; }
+
+.shots { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.shots img { border-radius: 18px; border: 1px solid var(--border); box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3); height: auto; }
+.shots .shot-iphone { width: 220px; }
+.shots .shot-mac { width: min(100%, 460px); }
