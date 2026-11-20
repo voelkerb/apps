@@ -47,6 +47,7 @@ header.site h1 { font-size: clamp(2.2rem, 6vw, 3.2rem); letter-spacing: -0.03em;
 header.site p { margin: 0; color: var(--muted); font-size: 1.15rem; }
 
 h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 40px 0 14px; }
+.app-category { font-size: 1rem; color: var(--text); margin: 24px 0 12px; }
 
 .card {
   display: flex;
@@ -64,7 +65,7 @@ h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; colo
 }
 a.card:hover { transform: translateY(-2px); text-decoration: none; }
 .card img { width: 84px; height: 84px; border-radius: 19px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25); flex: none; }
-.card h3 { margin: 0 0 4px; font-size: 1.3rem; letter-spacing: -0.01em; }
+.card h4 { margin: 0 0 4px; font-size: 1.3rem; letter-spacing: -0.01em; }
 .card p { margin: 0; color: var(--muted); }
 .card .chev { margin-left: auto; color: var(--muted); font-size: 1.6rem; }
 
