@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Annoticity – Label electricity datasets</title>
+  <meta name="description" content="Annoticity is a web app to browse and label electricity datasets like FIRED and BLOND, or your own recordings.">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .shots { display: grid; gap: 18px; }
+    .shots figure { margin: 0; }
+    .shots img { display: block; width: 100%; height: auto; filter: drop-shadow(0 14px 30px rgba(0,0,0,.25)); }
+    .shots figcaption { color: var(--muted); font-size: .9rem; text-align: center; margin-top: 8px; }
+    .shots .pair { display: grid; gap: 18px; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 560px) { .shots .pair { grid-template-columns: 1fr; } }
+    .actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+    .btn { padding: 9px 18px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); color: var(--text); font-weight: 600; }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    a.btn:hover { text-decoration: none; filter: brightness(1.08); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">‹ All apps</a>
+
+    <div class="hero">
+      <img src="icon.png" alt="Annoticity app icon">
+      <h1>Annoticity</h1>
+      <p>Browse and label electricity datasets in your browser.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/voelkerb/annoticity/releases/latest">Download</a>
+        <a class="btn" href="https://github.com/voelkerb/annoticity">Source on GitHub</a>
+      </div>
+    </div>
+
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <figure>
+        <img src="img/labels.png" alt="Fridge cycles from the FIRED dataset with on and off labels" loading="lazy">
+        <figcaption>Fridge cycles in FIRED, auto-labeled and renamed in one go.</figcaption>
+      </figure>
+      <div class="pair">
+        <figure>
+          <img src="img/autolabel.png" alt="Auto-labeling the FIRED smart meter in the light theme" loading="lazy">
+          <figcaption>Auto-labeling with state clustering.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/waveform.png" alt="Raw voltage and current of a TV switching on" loading="lazy">
+          <figcaption>Raw voltage and current when zoomed in.</figcaption>
+        </figure>
+      </div>
+      <figure>
+        <img src="img/blond.png" alt="Three-phase mains of the BLOND office dataset" loading="lazy">
+        <figcaption>Three-phase mains of the BLOND office dataset.</figcaption>
+      </figure>
+    </div>
+
+    <h2>Features</h2>
+    <ul class="features">
+      <li><b>Public datasets</b><span>FIRED and BLOND straight from their servers, plus REDD, UK-DALE and ECO from a local copy.</span></li>
+      <li><b>Your own data</b><span>Drop a CSV or a FIRED-style MKV file.</span></li>
+      <li><b>Fast plot</b><span>Full-resolution zoom and pan with min/max envelopes, so short spikes stay visible.</span></li>
+      <li><b>Raw waveforms</b><span>Voltage and current at up to 12.5 kHz when you zoom in.</span></li>
+      <li><b>Labels</b><span>Click to add, drag, snap to edges, undo and redo, rename all labels with the same name.</span></li>
+      <li><b>Auto-labeling</b><span>Step detection and state clustering, running in the background.</span></li>
+      <li><b>Export</b><span>CSV, SRT, ASS or JSON, and import them again.</span></li>
+      <li><b>Light and dark</b><span>Both themes, plus keyboard shortcuts for the common actions.</span></li>
+    </ul>
+
+    <h2>Support</h2>
+    <div class="prose">
+      <p>Annoticity is open source. Report bugs or ideas on <a href="https://github.com/voelkerb/annoticity/issues">GitHub</a> or write to <a href="mailto:info@voelkerb.com">info@voelkerb.com</a>.</p>
+    </div>
+
+    <footer>
+      <a href="mailto:info@voelkerb.com">info@voelkerb.com</a>
+      <a href="../">Benjamin Völker</a>
+    </footer>
+  </div>
+</body>
+</html>
